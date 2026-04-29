@@ -273,10 +273,6 @@ Important boundary:
 
 This distinction should be stated clearly in demos, README text, and resume descriptions.
 
-## Suggested Resume Description
-
-Built a skeleton-based human action recognition deployment system with `ONNX Runtime` and `FastAPI`, then extended it into an interactive video analysis demo with `Gradio` and `Qwen API`. The system supports action prediction, confidence ranking, natural language explanation, and follow-up QA through a complete `recognition + explanation + interaction` pipeline.
-
 ## Future Improvements
 
 - support automatic skeleton extraction from arbitrary RGB video
