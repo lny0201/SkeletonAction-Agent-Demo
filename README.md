@@ -27,7 +27,7 @@ The current demo uses uploaded video as the interaction entry, then maps the fil
 
 ```markdown
 ![Demo Overview](assets/demo-overview.png)
-![Explanation](assets/demo-explanation.png)
+![Explanation](https://github.com/lny0201/SkeletonAction-LLM-Demo/blob/main/assets/demo-explanation.png)
 ![QA](assets/demo-qa.png)
 ```
 
