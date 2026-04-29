@@ -1,0 +1,7 @@
+fastapi>=0.110
+uvicorn>=0.30
+onnxruntime>=1.17
+numpy>=1.23
+pydantic>=1.10
+python-multipart>=0.0.9
+requests>=2.28
