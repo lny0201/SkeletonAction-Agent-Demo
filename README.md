@@ -24,12 +24,10 @@ The current demo uses uploaded video as the interaction entry, then maps the fil
 - Template fallback when the LLM API is unavailable
 
 ## Screenshots
-
-```markdown
 ![Demo Overview](assets/demo-overview.png)
 ![Explanation](https://github.com/lny0201/SkeletonAction-LLM-Demo/blob/main/assets/demo-explanation.png)
 ![QA](assets/demo-qa.png)
-```
+
 
 ## Result Showcase
 
