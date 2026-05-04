@@ -1,0 +1,675 @@
+{
+  "ann_file": "/data4/nuoyali/ProtoGCN-main/data/nturgbd/ntu60_3danno.pkl",
+  "split": "xview_val",
+  "sample_mode": "diverse",
+  "seed": 3407,
+  "preprocess_mode": "pipeline",
+  "config": "configs/sem_sparse/ctrgcn_sem_sparse_ntu60_xsub_hrnet/j_aug_Xview.py",
+  "pipeline_source": "val",
+  "exported": 30,
+  "unique_labels": [
+    0,
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    14,
+    16,
+    20,
+    21,
+    22,
+    26,
+    29,
+    30,
+    31,
+    32,
+    35,
+    36,
+    38,
+    39,
+    42,
+    43,
+    46,
+    48,
+    49,
+    53,
+    55,
+    57,
+    59
+  ],
+  "num_unique_labels": 30,
+  "samples": [
+    {
+      "ann_index": 14923,
+      "sample_name": "S013C001P028R001A060",
+      "label": 59,
+      "raw_shape": [
+        2,
+        89,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/000_S013C001P028R001A060_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/000_S013C001P028R001A060_model_input.npy"
+    },
+    {
+      "ann_index": 5624,
+      "sample_name": "S006C001P023R002A047",
+      "label": 46,
+      "raw_shape": [
+        1,
+        65,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/001_S006C001P023R002A047_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/001_S006C001P023R002A047_model_input.npy"
+    },
+    {
+      "ann_index": 15240,
+      "sample_name": "S014C001P008R001A017",
+      "label": 16,
+      "raw_shape": [
+        1,
+        106,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/002_S014C001P008R001A017_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/002_S014C001P008R001A017_model_input.npy"
+    },
+    {
+      "ann_index": 18816,
+      "sample_name": "S017C001P020R001A005",
+      "label": 4,
+      "raw_shape": [
+        1,
+        54,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/003_S017C001P020R001A005_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/003_S017C001P020R001A005_model_input.npy"
+    },
+    {
+      "ann_index": 6393,
+      "sample_name": "S007C001P017R001A036",
+      "label": 35,
+      "raw_shape": [
+        1,
+        61,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/004_S007C001P017R001A036_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/004_S007C001P017R001A036_model_input.npy"
+    },
+    {
+      "ann_index": 3485,
+      "sample_name": "S004C001P020R001A007",
+      "label": 6,
+      "raw_shape": [
+        1,
+        69,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/005_S004C001P020R001A007_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/005_S004C001P020R001A007_model_input.npy"
+    },
+    {
+      "ann_index": 9053,
+      "sample_name": "S009C001P008R002A001",
+      "label": 0,
+      "raw_shape": [
+        1,
+        127,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/006_S009C001P008R002A001_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/006_S009C001P008R002A001_model_input.npy"
+    },
+    {
+      "ann_index": 6903,
+      "sample_name": "S007C001P026R002A008",
+      "label": 7,
+      "raw_shape": [
+        1,
+        79,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/007_S007C001P026R002A008_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/007_S007C001P026R002A008_model_input.npy"
+    },
+    {
+      "ann_index": 16623,
+      "sample_name": "S015C001P016R002A023",
+      "label": 22,
+      "raw_shape": [
+        1,
+        57,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/008_S015C001P016R002A023_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/008_S015C001P016R002A023_model_input.npy"
+    },
+    {
+      "ann_index": 8243,
+      "sample_name": "S008C001P031R002A031",
+      "label": 30,
+      "raw_shape": [
+        1,
+        39,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/009_S008C001P031R002A031_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/009_S008C001P031R002A031_model_input.npy"
+    },
+    {
+      "ann_index": 7574,
+      "sample_name": "S008C001P015R001A022",
+      "label": 21,
+      "raw_shape": [
+        1,
+        66,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/010_S008C001P015R001A022_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/010_S008C001P015R001A022_model_input.npy"
+    },
+    {
+      "ann_index": 7248,
+      "sample_name": "S008C001P001R001A056",
+      "label": 55,
+      "raw_shape": [
+        2,
+        68,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/011_S008C001P001R001A056_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/011_S008C001P001R001A056_model_input.npy"
+    },
+    {
+      "ann_index": 2528,
+      "sample_name": "S003C001P015R001A009",
+      "label": 8,
+      "raw_shape": [
+        1,
+        62,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/012_S003C001P015R001A009_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/012_S003C001P015R001A009_model_input.npy"
+    },
+    {
+      "ann_index": 11624,
+      "sample_name": "S011C001P016R002A054",
+      "label": 53,
+      "raw_shape": [
+        2,
+        40,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/013_S011C001P016R002A054_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/013_S011C001P016R002A054_model_input.npy"
+    },
+    {
+      "ann_index": 8242,
+      "sample_name": "S008C001P031R002A030",
+      "label": 29,
+      "raw_shape": [
+        1,
+        84,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/014_S008C001P031R002A030_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/014_S008C001P031R002A030_model_input.npy"
+    },
+    {
+      "ann_index": 11177,
+      "sample_name": "S011C001P007R001A027",
+      "label": 26,
+      "raw_shape": [
+        1,
+        81,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/015_S011C001P007R001A027_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/015_S011C001P007R001A027_model_input.npy"
+    },
+    {
+      "ann_index": 9504,
+      "sample_name": "S009C001P019R001A032",
+      "label": 31,
+      "raw_shape": [
+        1,
+        82,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/016_S009C001P019R001A032_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/016_S009C001P019R001A032_model_input.npy"
+    },
+    {
+      "ann_index": 12692,
+      "sample_name": "S012C001P008R002A043",
+      "label": 42,
+      "raw_shape": [
+        1,
+        74,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/017_S012C001P008R002A043_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/017_S012C001P008R002A043_model_input.npy"
+    },
+    {
+      "ann_index": 5321,
+      "sample_name": "S006C001P019R001A044",
+      "label": 43,
+      "raw_shape": [
+        1,
+        76,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/018_S006C001P019R001A044_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/018_S006C001P019R001A044_model_input.npy"
+    },
+    {
+      "ann_index": 12506,
+      "sample_name": "S012C001P007R001A037",
+      "label": 36,
+      "raw_shape": [
+        1,
+        144,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/019_S012C001P007R001A037_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/019_S012C001P007R001A037_model_input.npy"
+    },
+    {
+      "ann_index": 69,
+      "sample_name": "S001C001P001R002A010",
+      "label": 9,
+      "raw_shape": [
+        1,
+        65,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/020_S001C001P001R002A010_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/020_S001C001P001R002A010_model_input.npy"
+    },
+    {
+      "ann_index": 7430,
+      "sample_name": "S008C001P007R002A058",
+      "label": 57,
+      "raw_shape": [
+        2,
+        65,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/021_S008C001P007R002A058_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/021_S008C001P007R002A058_model_input.npy"
+    },
+    {
+      "ann_index": 7482,
+      "sample_name": "S008C001P008R001A050",
+      "label": 49,
+      "raw_shape": [
+        2,
+        64,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/022_S008C001P008R001A050_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/022_S008C001P008R001A050_model_input.npy"
+    },
+    {
+      "ann_index": 6898,
+      "sample_name": "S007C001P026R002A003",
+      "label": 2,
+      "raw_shape": [
+        1,
+        87,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/023_S007C001P026R002A003_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/023_S007C001P026R002A003_model_input.npy"
+    },
+    {
+      "ann_index": 15152,
+      "sample_name": "S014C001P007R001A049",
+      "label": 48,
+      "raw_shape": [
+        1,
+        93,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/024_S014C001P007R001A049_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/024_S014C001P007R001A049_model_input.npy"
+    },
+    {
+      "ann_index": 4171,
+      "sample_name": "S005C001P016R002A033",
+      "label": 32,
+      "raw_shape": [
+        1,
+        63,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/025_S005C001P016R002A033_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/025_S005C001P016R002A033_model_input.npy"
+    },
+    {
+      "ann_index": 10410,
+      "sample_name": "S010C001P017R002A039",
+      "label": 38,
+      "raw_shape": [
+        1,
+        68,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/026_S010C001P017R002A039_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/026_S010C001P017R002A039_model_input.npy"
+    },
+    {
+      "ann_index": 9013,
+      "sample_name": "S009C001P008R001A021",
+      "label": 20,
+      "raw_shape": [
+        1,
+        61,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/027_S009C001P008R001A021_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/027_S009C001P008R001A021_model_input.npy"
+    },
+    {
+      "ann_index": 3014,
+      "sample_name": "S003C001P019R001A015",
+      "label": 14,
+      "raw_shape": [
+        1,
+        154,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/028_S003C001P019R001A015_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/028_S003C001P019R001A015_model_input.npy"
+    },
+    {
+      "ann_index": 9752,
+      "sample_name": "S010C001P007R001A040",
+      "label": 39,
+      "raw_shape": [
+        1,
+        59,
+        25,
+        3
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ],
+      "raw_npy": "deployment/artifacts/ntu60_input_samples/029_S010C001P007R001A040_raw.npy",
+      "model_input_npy": "deployment/artifacts/ntu60_input_samples/029_S010C001P007R001A040_model_input.npy"
+    }
+  ]
+}

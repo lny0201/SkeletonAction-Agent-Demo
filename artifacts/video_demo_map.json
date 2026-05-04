@@ -1,0 +1,53 @@
+{
+  "S008C001P015R001A022_cheer up.mp4": {
+    "sample_name": "S008C001P015R001A022_cheer up",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/010_S008C001P015R001A022_model_input_cheer up.npy"
+  },
+  "S008C001P015R001A022_cheer up": {
+    "sample_name": "S008C001P015R001A022_cheer up",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/010_S008C001P015R001A022_model_input_cheer up.npy"
+  },
+
+  "S007C001P026R002A008_sitting down.mp4": {
+    "sample_name": "S007C001P026R002A008_sitting down",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/007_S007C001P026R002A008_model_input_sitting down.npy"
+  },
+  "S007C001P026R002A008_sitting down": {
+    "sample_name": "S007C001P026R002A008_sitting down",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/007_S007C001P026R002A008_model_input_sitting down.npy"
+  },
+  "S009C001P008R002A001_drink water.mp4": {
+    "sample_name": "S009C001P008R002A001_drink water",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/006_S009C001P008R002A001_model_input_drink water.npy"
+  },
+  "S009C001P008R002A001_drink water": {
+    "sample_name": "S009C001P008R002A001_drink water",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/006_S009C001P008R002A001_model_input_drink water.npy"
+  },
+  "S004C001P020R001A007_throw.mp4": {
+    "sample_name": "S004C001P020R001A007_throw",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/005_S004C001P020R001A007_model_input_throw.npy"
+  },
+  "S004C001P020R001A007_throw": {
+    "sample_name": "S004C001P020R001A007_throw",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/005_S004C001P020R001A007_model_input_throw.npy"
+  },
+  "S015C001P016R002A023_hand waving.mp4": {
+    "sample_name": "S015C001P016R002A023_hand waving",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/008_S015C001P016R002A023_model_input_hand waving.npy"
+  },
+  "S015C001P016R002A023_hand waving": {
+    "sample_name": "S015C001P016R002A023_hand waving",
+    "input_type": "npy_model_input",
+    "path": "deployment/artifacts/ntu60_input_samples/008_S015C001P016R002A023_model_input_hand waving.npy"
+  }
+}

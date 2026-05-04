@@ -1,0 +1,1335 @@
+{
+  "onnx": "deployment/artifacts/sem_sparse_ntu60_xview_joint.onnx",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "num_samples": 30,
+  "topk": 5,
+  "eval": {
+    "num_with_gt": 30,
+    "top1_correct": 30,
+    "top1_acc": 1.0
+  },
+  "results": [
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/000_S013C001P028R001A060_model_input.npy",
+      "pred_label": 59,
+      "pred_name": "walking apart from each other",
+      "gt_label": 59,
+      "gt_name": "walking apart from each other",
+      "is_top1_correct": true,
+      "score": 0.904845118522644,
+      "topk": [
+        {
+          "label": 59,
+          "name": "walking apart from each other",
+          "score": 0.904845118522644
+        },
+        {
+          "label": 58,
+          "name": "walking towards each other",
+          "score": 0.032277002930641174
+        },
+        {
+          "label": 51,
+          "name": "pushing other person",
+          "score": 0.004611451644450426
+        },
+        {
+          "label": 41,
+          "name": "staggering",
+          "score": 0.003647716948762536
+        },
+        {
+          "label": 54,
+          "name": "hugging other person",
+          "score": 0.002198245143517852
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/001_S006C001P023R002A047_model_input.npy",
+      "pred_label": 46,
+      "pred_name": "touch neck (neckache)",
+      "gt_label": 46,
+      "gt_name": "touch neck (neckache)",
+      "is_top1_correct": true,
+      "score": 0.9615436792373657,
+      "topk": [
+        {
+          "label": 46,
+          "name": "touch neck (neckache)",
+          "score": 0.9615436792373657
+        },
+        {
+          "label": 43,
+          "name": "touch head (headache)",
+          "score": 0.002834001090377569
+        },
+        {
+          "label": 3,
+          "name": "brushing hair",
+          "score": 0.0022009501699358225
+        },
+        {
+          "label": 45,
+          "name": "touch back (backache)",
+          "score": 0.0021236937027424574
+        },
+        {
+          "label": 44,
+          "name": "touch chest (stomachache/heart pain)",
+          "score": 0.0012738753575831652
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/002_S014C001P008R001A017_model_input.npy",
+      "pred_label": 16,
+      "pred_name": "take off a shoe",
+      "gt_label": 16,
+      "gt_name": "take off a shoe",
+      "is_top1_correct": true,
+      "score": 0.9439688920974731,
+      "topk": [
+        {
+          "label": 16,
+          "name": "take off a shoe",
+          "score": 0.9439688920974731
+        },
+        {
+          "label": 15,
+          "name": "wear a shoe",
+          "score": 0.00901550892740488
+        },
+        {
+          "label": 47,
+          "name": "nausea or vomiting condition",
+          "score": 0.0030210630502551794
+        },
+        {
+          "label": 5,
+          "name": "pickup",
+          "score": 0.002322920598089695
+        },
+        {
+          "label": 56,
+          "name": "touch other person's pocket",
+          "score": 0.0022054414730519056
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/003_S017C001P020R001A005_model_input.npy",
+      "pred_label": 4,
+      "pred_name": "drop",
+      "gt_label": 4,
+      "gt_name": "drop",
+      "is_top1_correct": true,
+      "score": 0.9756272435188293,
+      "topk": [
+        {
+          "label": 4,
+          "name": "drop",
+          "score": 0.9756272435188293
+        },
+        {
+          "label": 44,
+          "name": "touch chest (stomachache/heart pain)",
+          "score": 0.0011564549058675766
+        },
+        {
+          "label": 23,
+          "name": "kicking something",
+          "score": 0.0008465202990919352
+        },
+        {
+          "label": 24,
+          "name": "reach into pocket",
+          "score": 0.0008031128090806305
+        },
+        {
+          "label": 35,
+          "name": "shake head",
+          "score": 0.0007814688142389059
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/004_S007C001P017R001A036_model_input.npy",
+      "pred_label": 35,
+      "pred_name": "shake head",
+      "gt_label": 35,
+      "gt_name": "shake head",
+      "is_top1_correct": true,
+      "score": 0.9567511081695557,
+      "topk": [
+        {
+          "label": 35,
+          "name": "shake head",
+          "score": 0.9567511081695557
+        },
+        {
+          "label": 45,
+          "name": "touch back (backache)",
+          "score": 0.0024041663855314255
+        },
+        {
+          "label": 4,
+          "name": "drop",
+          "score": 0.0019268653122708201
+        },
+        {
+          "label": 40,
+          "name": "sneeze/cough",
+          "score": 0.001416287967003882
+        },
+        {
+          "label": 34,
+          "name": "nod head/bow",
+          "score": 0.0013934923335909843
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/005_S004C001P020R001A007_model_input.npy",
+      "pred_label": 6,
+      "pred_name": "throw",
+      "gt_label": 6,
+      "gt_name": "throw",
+      "is_top1_correct": true,
+      "score": 0.985696017742157,
+      "topk": [
+        {
+          "label": 6,
+          "name": "throw",
+          "score": 0.985696017742157
+        },
+        {
+          "label": 37,
+          "name": "salute",
+          "score": 0.00206589768640697
+        },
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.0015601791674271226
+        },
+        {
+          "label": 49,
+          "name": "punching/slapping other person",
+          "score": 0.0013125402620062232
+        },
+        {
+          "label": 21,
+          "name": "cheer up",
+          "score": 0.001153195626102388
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/006_S009C001P008R002A001_model_input.npy",
+      "pred_label": 0,
+      "pred_name": "drink water",
+      "gt_label": 0,
+      "gt_name": "drink water",
+      "is_top1_correct": true,
+      "score": 0.9702591300010681,
+      "topk": [
+        {
+          "label": 0,
+          "name": "drink water",
+          "score": 0.9702591300010681
+        },
+        {
+          "label": 1,
+          "name": "eat meal/snack",
+          "score": 0.0026991264894604683
+        },
+        {
+          "label": 2,
+          "name": "brushing teeth",
+          "score": 0.0017008621944114566
+        },
+        {
+          "label": 17,
+          "name": "wear on glasses",
+          "score": 0.0011283596977591515
+        },
+        {
+          "label": 43,
+          "name": "touch head (headache)",
+          "score": 0.0008829882717691362
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/007_S007C001P026R002A008_model_input.npy",
+      "pred_label": 7,
+      "pred_name": "sitting down",
+      "gt_label": 7,
+      "gt_name": "sitting down",
+      "is_top1_correct": true,
+      "score": 0.9588370323181152,
+      "topk": [
+        {
+          "label": 7,
+          "name": "sitting down",
+          "score": 0.9588370323181152
+        },
+        {
+          "label": 42,
+          "name": "falling",
+          "score": 0.0023649181239306927
+        },
+        {
+          "label": 26,
+          "name": "jump up",
+          "score": 0.0020701291505247355
+        },
+        {
+          "label": 34,
+          "name": "nod head/bow",
+          "score": 0.0017408501589670777
+        },
+        {
+          "label": 41,
+          "name": "staggering",
+          "score": 0.0014759082114323974
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/008_S015C001P016R002A023_model_input.npy",
+      "pred_label": 22,
+      "pred_name": "hand waving",
+      "gt_label": 22,
+      "gt_name": "hand waving",
+      "is_top1_correct": true,
+      "score": 0.9638068675994873,
+      "topk": [
+        {
+          "label": 22,
+          "name": "hand waving",
+          "score": 0.9638068675994873
+        },
+        {
+          "label": 21,
+          "name": "cheer up",
+          "score": 0.002554579172283411
+        },
+        {
+          "label": 48,
+          "name": "use a fan (with hand or paper)/feeling warm",
+          "score": 0.001974912825971842
+        },
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.0018609043909236789
+        },
+        {
+          "label": 37,
+          "name": "salute",
+          "score": 0.0018194805597886443
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/009_S008C001P031R002A031_model_input.npy",
+      "pred_label": 30,
+      "pred_name": "pointing to something with finger",
+      "gt_label": 30,
+      "gt_name": "pointing to something with finger",
+      "is_top1_correct": true,
+      "score": 0.9554333090782166,
+      "topk": [
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.9554333090782166
+        },
+        {
+          "label": 53,
+          "name": "point finger at the other person",
+          "score": 0.014524239115417004
+        },
+        {
+          "label": 32,
+          "name": "check time (from watch)",
+          "score": 0.0016546021215617657
+        },
+        {
+          "label": 22,
+          "name": "hand waving",
+          "score": 0.0015292690368369222
+        },
+        {
+          "label": 31,
+          "name": "taking a selfie",
+          "score": 0.0011960463598370552
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/010_S008C001P015R001A022_model_input.npy",
+      "pred_label": 21,
+      "pred_name": "cheer up",
+      "gt_label": 21,
+      "gt_name": "cheer up",
+      "is_top1_correct": true,
+      "score": 0.9600719213485718,
+      "topk": [
+        {
+          "label": 21,
+          "name": "cheer up",
+          "score": 0.9600719213485718
+        },
+        {
+          "label": 22,
+          "name": "hand waving",
+          "score": 0.0022867601364851
+        },
+        {
+          "label": 6,
+          "name": "throw",
+          "score": 0.001663949340581894
+        },
+        {
+          "label": 3,
+          "name": "brushing hair",
+          "score": 0.0016323142917826772
+        },
+        {
+          "label": 14,
+          "name": "take off jacket",
+          "score": 0.0013958349591121078
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/011_S008C001P001R001A056_model_input.npy",
+      "pred_label": 55,
+      "pred_name": "giving something to other person",
+      "gt_label": 55,
+      "gt_name": "giving something to other person",
+      "is_top1_correct": true,
+      "score": 0.9761155247688293,
+      "topk": [
+        {
+          "label": 55,
+          "name": "giving something to other person",
+          "score": 0.9761155247688293
+        },
+        {
+          "label": 51,
+          "name": "pushing other person",
+          "score": 0.0014129726914688945
+        },
+        {
+          "label": 1,
+          "name": "eat meal/snack",
+          "score": 0.001280953991226852
+        },
+        {
+          "label": 57,
+          "name": "handshaking",
+          "score": 0.0011661573080345988
+        },
+        {
+          "label": 56,
+          "name": "touch other person's pocket",
+          "score": 0.000928889901842922
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/012_S003C001P015R001A009_model_input.npy",
+      "pred_label": 8,
+      "pred_name": "standing up (from sitting position)",
+      "gt_label": 8,
+      "gt_name": "standing up (from sitting position)",
+      "is_top1_correct": true,
+      "score": 0.9410381317138672,
+      "topk": [
+        {
+          "label": 8,
+          "name": "standing up (from sitting position)",
+          "score": 0.9410381317138672
+        },
+        {
+          "label": 26,
+          "name": "jump up",
+          "score": 0.002948272507637739
+        },
+        {
+          "label": 25,
+          "name": "hopping (one foot jumping)",
+          "score": 0.0023310270626097918
+        },
+        {
+          "label": 51,
+          "name": "pushing other person",
+          "score": 0.0020122104324400425
+        },
+        {
+          "label": 58,
+          "name": "walking towards each other",
+          "score": 0.0017585483146831393
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/013_S011C001P016R002A054_model_input.npy",
+      "pred_label": 53,
+      "pred_name": "point finger at the other person",
+      "gt_label": 53,
+      "gt_name": "point finger at the other person",
+      "is_top1_correct": true,
+      "score": 0.7625372409820557,
+      "topk": [
+        {
+          "label": 53,
+          "name": "point finger at the other person",
+          "score": 0.7625372409820557
+        },
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.09775630384683609
+        },
+        {
+          "label": 49,
+          "name": "punching/slapping other person",
+          "score": 0.020734591409564018
+        },
+        {
+          "label": 52,
+          "name": "pat on back of other person",
+          "score": 0.013921967707574368
+        },
+        {
+          "label": 57,
+          "name": "handshaking",
+          "score": 0.006433619186282158
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/014_S008C001P031R002A030_model_input.npy",
+      "pred_label": 29,
+      "pred_name": "typing on a keyboard",
+      "gt_label": 29,
+      "gt_name": "typing on a keyboard",
+      "is_top1_correct": true,
+      "score": 0.9003791213035583,
+      "topk": [
+        {
+          "label": 29,
+          "name": "typing on a keyboard",
+          "score": 0.9003791213035583
+        },
+        {
+          "label": 11,
+          "name": "writing",
+          "score": 0.006602065172046423
+        },
+        {
+          "label": 28,
+          "name": "playing with phone/tablet",
+          "score": 0.005815471522510052
+        },
+        {
+          "label": 44,
+          "name": "touch chest (stomachache/heart pain)",
+          "score": 0.004720668774098158
+        },
+        {
+          "label": 1,
+          "name": "eat meal/snack",
+          "score": 0.0043353307992219925
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/015_S011C001P007R001A027_model_input.npy",
+      "pred_label": 26,
+      "pred_name": "jump up",
+      "gt_label": 26,
+      "gt_name": "jump up",
+      "is_top1_correct": true,
+      "score": 0.9146324992179871,
+      "topk": [
+        {
+          "label": 26,
+          "name": "jump up",
+          "score": 0.9146324992179871
+        },
+        {
+          "label": 34,
+          "name": "nod head/bow",
+          "score": 0.004603676963597536
+        },
+        {
+          "label": 7,
+          "name": "sitting down",
+          "score": 0.0036346835549920797
+        },
+        {
+          "label": 25,
+          "name": "hopping (one foot jumping)",
+          "score": 0.0035161245614290237
+        },
+        {
+          "label": 5,
+          "name": "pickup",
+          "score": 0.0034734574146568775
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/016_S009C001P019R001A032_model_input.npy",
+      "pred_label": 31,
+      "pred_name": "taking a selfie",
+      "gt_label": 31,
+      "gt_name": "taking a selfie",
+      "is_top1_correct": true,
+      "score": 0.954434871673584,
+      "topk": [
+        {
+          "label": 31,
+          "name": "taking a selfie",
+          "score": 0.954434871673584
+        },
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.003214437048882246
+        },
+        {
+          "label": 32,
+          "name": "check time (from watch)",
+          "score": 0.0019986694678664207
+        },
+        {
+          "label": 0,
+          "name": "drink water",
+          "score": 0.0018200287595391273
+        },
+        {
+          "label": 28,
+          "name": "playing with phone/tablet",
+          "score": 0.0016314485110342503
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/017_S012C001P008R002A043_model_input.npy",
+      "pred_label": 42,
+      "pred_name": "falling",
+      "gt_label": 42,
+      "gt_name": "falling",
+      "is_top1_correct": true,
+      "score": 0.965535044670105,
+      "topk": [
+        {
+          "label": 42,
+          "name": "falling",
+          "score": 0.965535044670105
+        },
+        {
+          "label": 5,
+          "name": "pickup",
+          "score": 0.0024104444310069084
+        },
+        {
+          "label": 15,
+          "name": "wear a shoe",
+          "score": 0.0017778401961550117
+        },
+        {
+          "label": 7,
+          "name": "sitting down",
+          "score": 0.0017043305560946465
+        },
+        {
+          "label": 59,
+          "name": "walking apart from each other",
+          "score": 0.0016375248087570071
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/018_S006C001P019R001A044_model_input.npy",
+      "pred_label": 43,
+      "pred_name": "touch head (headache)",
+      "gt_label": 43,
+      "gt_name": "touch head (headache)",
+      "is_top1_correct": true,
+      "score": 0.9688601493835449,
+      "topk": [
+        {
+          "label": 43,
+          "name": "touch head (headache)",
+          "score": 0.9688601493835449
+        },
+        {
+          "label": 46,
+          "name": "touch neck (neckache)",
+          "score": 0.0018974534468725324
+        },
+        {
+          "label": 36,
+          "name": "wipe face",
+          "score": 0.001711824326775968
+        },
+        {
+          "label": 2,
+          "name": "brushing teeth",
+          "score": 0.001642867922782898
+        },
+        {
+          "label": 18,
+          "name": "take off glasses",
+          "score": 0.0013911918504163623
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/019_S012C001P007R001A037_model_input.npy",
+      "pred_label": 36,
+      "pred_name": "wipe face",
+      "gt_label": 36,
+      "gt_name": "wipe face",
+      "is_top1_correct": true,
+      "score": 0.8686563372612,
+      "topk": [
+        {
+          "label": 36,
+          "name": "wipe face",
+          "score": 0.8686563372612
+        },
+        {
+          "label": 40,
+          "name": "sneeze/cough",
+          "score": 0.007655593100935221
+        },
+        {
+          "label": 43,
+          "name": "touch head (headache)",
+          "score": 0.006945181638002396
+        },
+        {
+          "label": 3,
+          "name": "brushing hair",
+          "score": 0.006581325549632311
+        },
+        {
+          "label": 18,
+          "name": "take off glasses",
+          "score": 0.0054059941321611404
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/020_S001C001P001R002A010_model_input.npy",
+      "pred_label": 9,
+      "pred_name": "clapping",
+      "gt_label": 9,
+      "gt_name": "clapping",
+      "is_top1_correct": true,
+      "score": 0.9656856656074524,
+      "topk": [
+        {
+          "label": 9,
+          "name": "clapping",
+          "score": 0.9656856656074524
+        },
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.0015174122527241707
+        },
+        {
+          "label": 39,
+          "name": "cross hands in front (say stop)",
+          "score": 0.0014969466719776392
+        },
+        {
+          "label": 33,
+          "name": "rub two hands together",
+          "score": 0.0014325669035315514
+        },
+        {
+          "label": 14,
+          "name": "take off jacket",
+          "score": 0.001380140078254044
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/021_S008C001P007R002A058_model_input.npy",
+      "pred_label": 57,
+      "pred_name": "handshaking",
+      "gt_label": 57,
+      "gt_name": "handshaking",
+      "is_top1_correct": true,
+      "score": 0.9921150803565979,
+      "topk": [
+        {
+          "label": 57,
+          "name": "handshaking",
+          "score": 0.9921150803565979
+        },
+        {
+          "label": 55,
+          "name": "giving something to other person",
+          "score": 0.0006305884453468025
+        },
+        {
+          "label": 54,
+          "name": "hugging other person",
+          "score": 0.0004502376832533628
+        },
+        {
+          "label": 33,
+          "name": "rub two hands together",
+          "score": 0.000413450034102425
+        },
+        {
+          "label": 50,
+          "name": "kicking other person",
+          "score": 0.0002727638348005712
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/022_S008C001P008R001A050_model_input.npy",
+      "pred_label": 49,
+      "pred_name": "punching/slapping other person",
+      "gt_label": 49,
+      "gt_name": "punching/slapping other person",
+      "is_top1_correct": true,
+      "score": 0.7450649738311768,
+      "topk": [
+        {
+          "label": 49,
+          "name": "punching/slapping other person",
+          "score": 0.7450649738311768
+        },
+        {
+          "label": 6,
+          "name": "throw",
+          "score": 0.16431427001953125
+        },
+        {
+          "label": 51,
+          "name": "pushing other person",
+          "score": 0.01091233640909195
+        },
+        {
+          "label": 56,
+          "name": "touch other person's pocket",
+          "score": 0.010044261813163757
+        },
+        {
+          "label": 50,
+          "name": "kicking other person",
+          "score": 0.007963629439473152
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/023_S007C001P026R002A003_model_input.npy",
+      "pred_label": 2,
+      "pred_name": "brushing teeth",
+      "gt_label": 2,
+      "gt_name": "brushing teeth",
+      "is_top1_correct": true,
+      "score": 0.7926117181777954,
+      "topk": [
+        {
+          "label": 2,
+          "name": "brushing teeth",
+          "score": 0.7926117181777954
+        },
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.012053264304995537
+        },
+        {
+          "label": 43,
+          "name": "touch head (headache)",
+          "score": 0.010132433846592903
+        },
+        {
+          "label": 0,
+          "name": "drink water",
+          "score": 0.006754008121788502
+        },
+        {
+          "label": 37,
+          "name": "salute",
+          "score": 0.006634576246142387
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/024_S014C001P007R001A049_model_input.npy",
+      "pred_label": 48,
+      "pred_name": "use a fan (with hand or paper)/feeling warm",
+      "gt_label": 48,
+      "gt_name": "use a fan (with hand or paper)/feeling warm",
+      "is_top1_correct": true,
+      "score": 0.9797684550285339,
+      "topk": [
+        {
+          "label": 48,
+          "name": "use a fan (with hand or paper)/feeling warm",
+          "score": 0.9797684550285339
+        },
+        {
+          "label": 10,
+          "name": "reading",
+          "score": 0.0010804461780935526
+        },
+        {
+          "label": 3,
+          "name": "brushing hair",
+          "score": 0.0009343519923277199
+        },
+        {
+          "label": 19,
+          "name": "put on a hat/cap",
+          "score": 0.0008016882929950953
+        },
+        {
+          "label": 43,
+          "name": "touch head (headache)",
+          "score": 0.0007608643500134349
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/025_S005C001P016R002A033_model_input.npy",
+      "pred_label": 32,
+      "pred_name": "check time (from watch)",
+      "gt_label": 32,
+      "gt_name": "check time (from watch)",
+      "is_top1_correct": true,
+      "score": 0.9428451061248779,
+      "topk": [
+        {
+          "label": 32,
+          "name": "check time (from watch)",
+          "score": 0.9428451061248779
+        },
+        {
+          "label": 24,
+          "name": "reach into pocket",
+          "score": 0.0025999576319009066
+        },
+        {
+          "label": 38,
+          "name": "put the palms together",
+          "score": 0.0016912511782720685
+        },
+        {
+          "label": 30,
+          "name": "pointing to something with finger",
+          "score": 0.0016629250021651387
+        },
+        {
+          "label": 12,
+          "name": "tear up paper",
+          "score": 0.0016458664322271943
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/026_S010C001P017R002A039_model_input.npy",
+      "pred_label": 38,
+      "pred_name": "put the palms together",
+      "gt_label": 38,
+      "gt_name": "put the palms together",
+      "is_top1_correct": true,
+      "score": 0.9573896527290344,
+      "topk": [
+        {
+          "label": 38,
+          "name": "put the palms together",
+          "score": 0.9573896527290344
+        },
+        {
+          "label": 39,
+          "name": "cross hands in front (say stop)",
+          "score": 0.0023585923481732607
+        },
+        {
+          "label": 27,
+          "name": "make a phone call/answer phone",
+          "score": 0.0018092277459800243
+        },
+        {
+          "label": 40,
+          "name": "sneeze/cough",
+          "score": 0.0017930276226252317
+        },
+        {
+          "label": 32,
+          "name": "check time (from watch)",
+          "score": 0.0017447335412725806
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/027_S009C001P008R001A021_model_input.npy",
+      "pred_label": 20,
+      "pred_name": "take off a hat/cap",
+      "gt_label": 20,
+      "gt_name": "take off a hat/cap",
+      "is_top1_correct": true,
+      "score": 0.9812911748886108,
+      "topk": [
+        {
+          "label": 20,
+          "name": "take off a hat/cap",
+          "score": 0.9812911748886108
+        },
+        {
+          "label": 35,
+          "name": "shake head",
+          "score": 0.0008610066724941134
+        },
+        {
+          "label": 18,
+          "name": "take off glasses",
+          "score": 0.0008162882295437157
+        },
+        {
+          "label": 19,
+          "name": "put on a hat/cap",
+          "score": 0.0007806820794939995
+        },
+        {
+          "label": 25,
+          "name": "hopping (one foot jumping)",
+          "score": 0.0007201698608696461
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/028_S003C001P019R001A015_model_input.npy",
+      "pred_label": 14,
+      "pred_name": "take off jacket",
+      "gt_label": 14,
+      "gt_name": "take off jacket",
+      "is_top1_correct": true,
+      "score": 0.9350724816322327,
+      "topk": [
+        {
+          "label": 14,
+          "name": "take off jacket",
+          "score": 0.9350724816322327
+        },
+        {
+          "label": 47,
+          "name": "nausea or vomiting condition",
+          "score": 0.004385349340736866
+        },
+        {
+          "label": 13,
+          "name": "wear jacket",
+          "score": 0.0035670169163495302
+        },
+        {
+          "label": 24,
+          "name": "reach into pocket",
+          "score": 0.00328159611672163
+        },
+        {
+          "label": 44,
+          "name": "touch chest (stomachache/heart pain)",
+          "score": 0.002402152866125107
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    },
+    {
+      "file": "deployment/artifacts/ntu60_input_samples/029_S010C001P007R001A040_model_input.npy",
+      "pred_label": 39,
+      "pred_name": "cross hands in front (say stop)",
+      "gt_label": 39,
+      "gt_name": "cross hands in front (say stop)",
+      "is_top1_correct": true,
+      "score": 0.8457261323928833,
+      "topk": [
+        {
+          "label": 39,
+          "name": "cross hands in front (say stop)",
+          "score": 0.8457261323928833
+        },
+        {
+          "label": 38,
+          "name": "put the palms together",
+          "score": 0.00575172109529376
+        },
+        {
+          "label": 26,
+          "name": "jump up",
+          "score": 0.005051573738455772
+        },
+        {
+          "label": 32,
+          "name": "check time (from watch)",
+          "score": 0.004809685982763767
+        },
+        {
+          "label": 5,
+          "name": "pickup",
+          "score": 0.004617628641426563
+        }
+      ],
+      "model_input_shape": [
+        1,
+        1,
+        2,
+        64,
+        25,
+        3
+      ]
+    }
+  ]
+}
