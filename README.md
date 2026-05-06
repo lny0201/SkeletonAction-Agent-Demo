@@ -372,10 +372,6 @@ Important boundary:
 
 This distinction should be stated clearly in demos, README text, and resume descriptions.
 
-## Suggested Resume Description
-
-Built a lightweight action-analysis agent on top of an `ONNX Runtime` skeleton action recognition service. The system exposes prediction, explanation, QA, and tool-oriented agent APIs through `FastAPI`, and provides a two-tab `Gradio` demo with visible tool traces, reliability checks, candidate comparison, and scenario-based risk assessment.
-
 ## Future Improvements
 
 - support automatic skeleton extraction from arbitrary RGB video
