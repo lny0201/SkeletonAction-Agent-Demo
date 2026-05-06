@@ -3,6 +3,7 @@
 This app is a thin frontend for FastAPI endpoint:
 
 - `POST /analyze/video-demo`
+- `POST /agent/analyze-video`
 - `POST /qa`
 
 It uploads a video file, relies on filename-based mapping in:
@@ -17,6 +18,8 @@ and displays:
 - mapping details
 - explanation text
 - follow-up QA
+- agent tool trace
+- final agent answer
 - full API JSON response
 
 ## 1. Install
@@ -81,6 +84,16 @@ Open:
 
 - `http://127.0.0.1:7860`
 
+The UI contains two tabs:
+
+- `Action Recognition Demo`
+- `Agent Analysis`
+
+In `Agent Analysis`, you can either:
+
+- upload a local video
+- select a built-in demo video from `deployment/artifacts/input_video/`
+
 ## 4. Verify Mapping
 
 Upload:
@@ -96,6 +109,15 @@ Expected behavior:
 - prediction summary appears
 - explanation appears
 - QA box can answer follow-up questions
+- Agent tab can show used tools, execution trace, and final answer
+
+Suggested agent demo flow:
+
+1. Open `Agent Analysis`
+2. Select `S009C001P008R002A001_drink water.mp4` from the demo selector
+3. Click `Compare if uncertain` or `Check reliability`
+4. Click `Run Agent`
+5. Inspect `Used Tools`, `Tool Execution Trace`, and `Final Agent Answer`
 
 ## 5. Common Issues
 

@@ -8,6 +8,15 @@ import numpy as np
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 
 from deployment.fastapi.llm import LLMExplainer
+from deployment.fastapi.agent_orchestrator import ActionAgentOrchestrator
+from deployment.fastapi.agent_schemas import AgentAnalyzeResponse, AgentRunToolRequest
+from deployment.fastapi.agent_tools import (
+    assess_action_risk,
+    check_reliability,
+    compare_topk_actions,
+    explain_action,
+    recognize_action,
+)
 from deployment.fastapi.preprocess import NTUPreprocessor
 from deployment.fastapi.runtime import OnnxActionRuntime
 from deployment.fastapi.schemas import (
@@ -41,11 +50,12 @@ preprocessor: NTUPreprocessor = None
 video_demo_mapper: VideoDemoMapper = None
 llm_explainer: LLMExplainer = None
 onnx_size_mb: float = 0.0
+agent_orchestrator: ActionAgentOrchestrator = None
 
 
 @app.on_event("startup")
 def startup_event() -> None:
-    global runtime, preprocessor, video_demo_mapper, llm_explainer, onnx_size_mb
+    global runtime, preprocessor, video_demo_mapper, llm_explainer, onnx_size_mb, agent_orchestrator
     if not os.path.isfile(ONNX_PATH):
         raise RuntimeError(f"ONNX file not found: {ONNX_PATH}")
     runtime = OnnxActionRuntime(
@@ -62,6 +72,15 @@ def startup_event() -> None:
     else:
         video_demo_mapper = None
     llm_explainer = LLMExplainer()
+    agent_orchestrator = ActionAgentOrchestrator(
+        resolver_fn=_resolve_video_demo_prediction,
+        llm_explain_fn=lambda pred, lang: llm_explainer.explain(prediction=pred, language=lang),
+        llm_answer_fn=lambda pred, question, lang: llm_explainer.answer_question(
+            prediction=pred,
+            question=question,
+            language=lang,
+        ),
+    )
     onnx_size_mb = round(os.path.getsize(ONNX_PATH) / (1024 * 1024), 3)
 
 
@@ -315,3 +334,64 @@ async def analyze_video_demo(file: UploadFile = File(...), topk: int = Form(5), 
         "explanation": explanation,
         "metrics": metrics,
     }
+
+
+@app.post("/agent/run-tool")
+def agent_run_tool(req: AgentRunToolRequest) -> dict:
+    if req.tool == "recognize_action":
+        if not req.video_filename:
+            raise HTTPException(status_code=400, detail="video_filename is required for recognize_action")
+        output = recognize_action(
+            video_filename=req.video_filename,
+            topk=req.topk,
+            resolver_fn=_resolve_video_demo_prediction,
+        )
+        return {
+            "tool": req.tool,
+            "summary": "Recognition completed.",
+            "output": output,
+        }
+
+    if req.prediction is None:
+        raise HTTPException(status_code=400, detail="prediction is required for this tool")
+
+    if req.tool == "check_reliability":
+        output = check_reliability(req.prediction)
+    elif req.tool == "compare_topk_actions":
+        output = compare_topk_actions(req.prediction, req.candidate_indices)
+    elif req.tool == "assess_action_risk":
+        output = assess_action_risk(req.prediction, req.scenario)
+    elif req.tool == "explain_action":
+        output = explain_action(
+            req.prediction,
+            llm_explain_fn=lambda pred, lang: llm_explainer.explain(prediction=pred, language=lang),
+            language=req.language,
+        )
+    else:
+        raise HTTPException(status_code=400, detail=f"Unsupported tool: {req.tool}")
+
+    return {
+        "tool": req.tool,
+        "summary": output.get("summary", ""),
+        "output": output,
+    }
+
+
+@app.post("/agent/analyze-video", response_model=AgentAnalyzeResponse)
+async def agent_analyze_video(
+    file: UploadFile = File(...),
+    instruction: str = Form(...),
+    topk: int = Form(5),
+    language: str = Form("zh"),
+) -> dict:
+    if agent_orchestrator is None:
+        raise HTTPException(status_code=503, detail="Agent orchestrator is not ready.")
+    filename = file.filename or ""
+    if not filename:
+        raise HTTPException(status_code=400, detail="Uploaded video filename is empty")
+    return agent_orchestrator.run(
+        video_filename=filename,
+        instruction=instruction,
+        topk=topk,
+        language=language,
+    )

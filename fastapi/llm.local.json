@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "api_base": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "api_key": "sk-01a556f5a91b4cd4a0e93dd0c932c7df",
+  "model": "qwen-turbo",
+  "timeout": 30
+}
